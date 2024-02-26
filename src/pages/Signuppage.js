@@ -3,7 +3,7 @@ import React from 'react'
 
 const Signuppage = () => {
   return (
-    <div>
+    <div className='flex justify-center items-center p-12'>
         <SignUp/>
     </div>
   )

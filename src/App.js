@@ -1,5 +1,5 @@
 import { SignedOut, SignedIn } from "@clerk/clerk-react"
-import Router from "./router/routes"
+import AppRouter from "./router/AppRouter"
 import AuthRouter from './router/AuthRouter'
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
         <AuthRouter />
       </SignedOut>
       <SignedIn>
-        <Router />
+        <AppRouter />
       </SignedIn>
     </div>
   )

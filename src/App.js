@@ -1,18 +1,18 @@
 import { SignedOut, SignedIn } from "@clerk/clerk-react"
-import SignInPage from "./pages/SignInPage"
- 
+import Router from "./router/routes"
+import AuthRouter from './router/AuthRouter'
 function App() {
- 
+
   return (
     <div>
       <SignedOut>
-        <SignInPage/>
+        <AuthRouter />
       </SignedOut>
       <SignedIn>
-        <p>This content is private. Only signed in users can see this.</p>
+        <Router />
       </SignedIn>
     </div>
   )
 }
- 
+
 export default App
